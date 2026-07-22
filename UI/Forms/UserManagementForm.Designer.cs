@@ -1,0 +1,132 @@
+namespace EmployeeManagementSystem.UI.Forms
+{
+    partial class UserManagementForm
+    {
+        private System.ComponentModel.IContainer components = null;
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null)) components.Dispose();
+            base.Dispose(disposing);
+        }
+        private void InitializeComponent()
+        {
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.btnAddUser = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.dgvUsers = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
+            this.SuspendLayout();
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Location = new System.Drawing.Point(20, 20);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(160, 25);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "User Management";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(20, 70);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(63, 15);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Username:";
+            this.txtUsername.Location = new System.Drawing.Point(100, 67);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(200, 23);
+            this.txtUsername.TabIndex = 2;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(20, 110);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(60, 15);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Password:";
+            this.txtPassword.Location = new System.Drawing.Point(100, 107);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(200, 23);
+            this.txtPassword.TabIndex = 4;
+            this.lblRole.AutoSize = true;
+            this.lblRole.Location = new System.Drawing.Point(20, 150);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(33, 15);
+            this.lblRole.TabIndex = 5;
+            this.lblRole.Text = "Role:";
+            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Location = new System.Drawing.Point(100, 147);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(200, 23);
+            this.cmbRole.TabIndex = 6;
+            this.btnAddUser.BackColor = System.Drawing.Color.Green;
+            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAddUser.ForeColor = System.Drawing.Color.White;
+            this.btnAddUser.Location = new System.Drawing.Point(20, 200);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Size = new System.Drawing.Size(130, 35);
+            this.btnAddUser.TabIndex = 7;
+            this.btnAddUser.Text = "Add User";
+            this.btnAddUser.UseVisualStyleBackColor = false;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            this.btnClose.BackColor = System.Drawing.Color.Gray;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(170, 200);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(130, 35);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.dgvUsers.AllowUserToAddRows = false;
+            this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
+            this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsers.Location = new System.Drawing.Point(330, 20);
+            this.dgvUsers.Name = "dgvUsers";
+            this.dgvUsers.ReadOnly = true;
+            this.dgvUsers.Size = new System.Drawing.Size(440, 250);
+            this.dgvUsers.TabIndex = 9;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(790, 290);
+            this.Controls.Add(this.dgvUsers);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnAddUser);
+            this.Controls.Add(this.cmbRole);
+            this.Controls.Add(this.lblRole);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblTitle);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "UserManagementForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "User Management";
+            this.Load += new System.EventHandler(this.UserManagementForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.ComboBox cmbRole;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Button btnAddUser;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridView dgvUsers;
+    }
+}

@@ -1,0 +1,130 @@
+namespace EmployeeManagementSystem.UI.Forms
+{
+    partial class DepartmentForm
+    {
+        private System.ComponentModel.IContainer components = null;
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null)) components.Dispose();
+            base.Dispose(disposing);
+        }
+        private void InitializeComponent()
+        {
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtDeptName = new System.Windows.Forms.TextBox();
+            this.lblDeptName = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.dgvDepartments = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepartments)).BeginInit();
+            this.SuspendLayout();
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Location = new System.Drawing.Point(20, 20);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(250, 25);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Department Management";
+            this.lblDeptName.AutoSize = true;
+            this.lblDeptName.Location = new System.Drawing.Point(20, 70);
+            this.lblDeptName.Name = "lblDeptName";
+            this.lblDeptName.Size = new System.Drawing.Size(108, 15);
+            this.lblDeptName.TabIndex = 1;
+            this.lblDeptName.Text = "Department Name:";
+            this.txtDeptName.Location = new System.Drawing.Point(140, 67);
+            this.txtDeptName.Name = "txtDeptName";
+            this.txtDeptName.Size = new System.Drawing.Size(200, 23);
+            this.txtDeptName.TabIndex = 2;
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Location = new System.Drawing.Point(20, 110);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(70, 15);
+            this.lblDescription.TabIndex = 3;
+            this.lblDescription.Text = "Description:";
+            this.txtDescription.Location = new System.Drawing.Point(140, 107);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(200, 60);
+            this.txtDescription.TabIndex = 4;
+            this.btnAdd.BackColor = System.Drawing.Color.Green;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(20, 190);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 35);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnDelete.BackColor = System.Drawing.Color.Crimson;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(130, 190);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 35);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnClose.BackColor = System.Drawing.Color.Gray;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(240, 190);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 35);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.dgvDepartments.AllowUserToAddRows = false;
+            this.dgvDepartments.AllowUserToDeleteRows = false;
+            this.dgvDepartments.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDepartments.Location = new System.Drawing.Point(370, 20);
+            this.dgvDepartments.Name = "dgvDepartments";
+            this.dgvDepartments.ReadOnly = true;
+            this.dgvDepartments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDepartments.Size = new System.Drawing.Size(400, 250);
+            this.dgvDepartments.TabIndex = 8;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(790, 290);
+            this.Controls.Add(this.dgvDepartments);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.lblDescription);
+            this.Controls.Add(this.txtDeptName);
+            this.Controls.Add(this.lblDeptName);
+            this.Controls.Add(this.lblTitle);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DepartmentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Department Management";
+            this.Load += new System.EventHandler(this.DepartmentForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepartments)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtDeptName;
+        private System.Windows.Forms.Label lblDeptName;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridView dgvDepartments;
+    }
+}

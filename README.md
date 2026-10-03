@@ -56,3 +56,6 @@ EmployeeManagementSystem/
 
 ### License
 This project is provided as-is for educational and development purposes.
+
+### Author
+Ali Jichi
